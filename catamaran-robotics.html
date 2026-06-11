@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail | Catamaran Robotics</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+    <header class="border-b border-slate-800 bg-slate-950/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-sm font-medium text-blue-400 hover:text-blue-300 transition flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+            </a>
+            <span class="text-xs font-mono text-teal-400">Team R&D Research</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12 space-y-12">
+        <div class="space-y-4">
+            <span class="inline-block bg-teal-500/10 text-teal-400 text-xs px-3 py-1 rounded-full font-medium">Maritime Robotics R&D</span>
+            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white">Catamaran Hull Design & Azimuth Thruster Mechanism</h1>
+            <p class="text-slate-400 text-base md:text-lg leading-relaxed">
+                Advanced 3D surface modeling of a high-speed catamaran hull structure coupled with custom 3D-printed vector thrust azimuth mechanical enclosures.
+            </p>
+        </div>
+
+        <section class="grid sm:grid-cols-2 gap-6 pt-4">
+            <div class="space-y-2">
+                <div class="aspect-video bg-slate-950 rounded-xl border border-slate-800 flex items-center justify-center overflow-hidden">
+                    <i class="fa-solid fa-ship text-4xl text-slate-800"></i>
+                </div>
+                <p class="text-xs text-slate-500 text-center font-mono">Fig 1. Twin-hull surface mapping executed inside Rhinoceros CAD.</p>
+            </div>
+            <div class="space-y-2">
+                <div class="aspect-video bg-slate-950 rounded-xl border border-slate-800 flex items-center justify-center overflow-hidden">
+                    <i class="fa-solid fa-gears text-4xl text-slate-800"></i>
+                </div>
+                <p class="text-xs text-slate-500 text-center font-mono">Fig 2. Mechanical schematic of the custom azimuth steering nozzle gear.</p>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-8 pt-4 border-t border-slate-800">
+            <div class="md:col-span-1 space-y-4">
+                <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 space-y-4 text-sm">
+                    <h3 class="font-bold text-white uppercase tracking-wider text-xs text-slate-400">Design Fields</h3>
+                    <div><span class="text-slate-500 block text-xs">Hull Design</span><span class="text-slate-300">Rhinoceros, Maxsurf Stability</span></div>
+                    <div><span class="text-slate-500 block text-xs">Drafting Code</span><span class="text-slate-300">AutoCAD 2D GA Layout</span></div>
+                    <div><span class="text-slate-500 block text-xs">Prototyping</span><span class="font-mono text-slate-300">3D Printing (PETG Structural)</span></div>
+                </div>
+            </div>
+            <div class="md:col-span-2 space-y-6 text-slate-400 text-sm leading-relaxed">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Project Overview</h3>
+                    <p>Developed to support deployment tasks for an autonomous surface vessel (ASV), this project integrated twin-hull structural engineering with localized electrical and steering constraints. Hydrostatic parameters were evaluated systematically to maintain stable equilibrium during abrupt directional maneuvers.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Manufacturing Tolerances</h3>
+                    <p>Designed parts considering plastic shrinkage behaviors during rapid prototyping runs. The final mechanical housing layout utilized high-infill PETG configurations to secure water-resistant barriers, ensuring robust structural integrity during prolonged water surface exposure trials.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
