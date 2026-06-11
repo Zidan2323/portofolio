@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail | Propeller Guard Thesis</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+    <header class="border-b border-slate-800 bg-slate-950/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-sm font-medium text-blue-400 hover:text-blue-300 transition flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+            </a>
+            <span class="text-xs font-mono text-cyan-500">Undergraduate Thesis</span>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12 space-y-12">
+        <div class="space-y-4">
+            <span class="inline-block bg-cyan-500/10 text-cyan-400 text-xs px-3 py-1 rounded-full font-medium">Undergraduate Thesis</span>
+            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white">Analysis of Kaplan Ka4-70 Propeller Guard Using CFD Method</h1>
+            <p class="text-slate-400 text-base md:text-lg leading-relaxed">
+                A thorough hydrodynamic investigation examining fluid interactions, drag profiles, and thrust recovery systems using a pre-swirl rotator implementation on propeller guards.
+            </p>
+        </div>
+
+        <section class="grid sm:grid-cols-2 gap-6 pt-4">
+            <div class="space-y-2">
+                <div class="aspect-video bg-slate-950 rounded-xl border border-slate-800 flex items-center justify-center overflow-hidden">
+                    <i class="fa-solid fa-shield-halved text-4xl text-slate-800"></i>
+                </div>
+                <p class="text-xs text-slate-500 text-center font-mono">Fig 1. Pressure contour plot across the duct ring and blade margins.</p>
+            </div>
+            <div class="space-y-2">
+                <div class="aspect-video bg-slate-950 rounded-xl border border-slate-800 flex items-center justify-center overflow-hidden">
+                    <i class="fa-solid fa-wind text-4xl text-slate-800"></i>
+                </div>
+                <p class="text-xs text-slate-500 text-center font-mono">Fig 2. Fluid flow streamlines illustrating pre-swirl rotator effects.</p>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-8 pt-4 border-t border-slate-800">
+            <div class="md:col-span-1 space-y-4">
+                <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 space-y-4 text-sm">
+                    <h3 class="font-bold text-white uppercase tracking-wider text-xs text-slate-400">Research Focus</h3>
+                    <div><span class="text-slate-500 block text-xs">University</span><span class="text-slate-300">Diponegoro University</span></div>
+                    <div><span class="text-slate-500 block text-xs">Analysis Tool</span><span class="font-mono text-slate-300">STAR-CCM+, Ansys Fluent</span></div>
+                    <div><span class="text-slate-500 block text-xs">Innovation Focus</span><span class="text-slate-300">Pre-Swirl Rotator Duct Integration</span></div>
+                </div>
+            </div>
+            <div class="md:col-span-2 space-y-6 text-slate-400 text-sm leading-relaxed">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Abstract & Objective</h3>
+                    <p>While structural propeller guards provide essential physical protection for autonomous vehicles and divers, they introduce additional skin friction and drag resistance. This thesis analyzes the application of localized pre-swirl rotator fins inside the guard structure to realign oncoming wake profiles, improving overall propulsive efficiency.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2">Numerical Configuration</h3>
+                    <p>Advanced cell-refinement controls were designated inside the narrow clearance gap between the blade tips and the internal shroud walls. Boundary layer parameters were meticulously captured by calculating local target Y+ criteria, utilizing standard k-omega SST modeling to predict flow separation points accurately.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
