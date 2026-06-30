@@ -10,6 +10,7 @@
 </head>
 <body class="bg-slate-950 text-slate-700 font-sans antialiased overflow-x-hidden">
 
+    <!-- NAVIGATION -->
     <nav class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md z-50 border-b border-slate-900 shadow-md">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#" class="text-base md:text-lg font-black tracking-wider text-white">PORTOFOLIO<span class="text-cyan-400">.</span></a>
@@ -22,12 +23,14 @@
                 <a href="#achievements" class="text-slate-300 hover:text-cyan-400 hover:-translate-y-0.5 transform transition-all duration-200" data-id="Prestasi" data-en="Achievements">Achievements</a>
                 <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 hover:scale-105 active:scale-95 px-4 py-2 rounded-lg transition-all duration-200 text-slate-900 shadow-md shadow-cyan-500/10 font-black" data-id="Kontak" data-en="Contact">Contact</a>
                 
+                <!-- LANGUAGE SWITCHER BUTTONS -->
                 <div class="flex items-center bg-slate-900 rounded-full p-1 border border-slate-800 ml-4">
                     <button onclick="toggleLanguage('id')" id="btn-lang-id" class="px-2 py-0.5 rounded-full text-[10px] font-black tracking-wider transition-all duration-200 uppercase cursor-pointer text-slate-400">ID</button>
                     <button onclick="toggleLanguage('en')" id="btn-lang-en" class="px-2 py-0.5 rounded-full text-[10px] font-black tracking-wider transition-all duration-200 uppercase cursor-pointer bg-cyan-500 text-slate-900 shadow-sm">EN</button>
                 </div>
             </div>
             
+            <!-- MOBILE MENU -->
             <div class="md:hidden flex items-center gap-3">
                 <div class="flex items-center bg-slate-900 rounded-full p-1 border border-slate-800">
                     <button onclick="toggleLanguage('id')" id="btn-lang-id-mob" class="px-2 py-0.5 rounded-full text-[9px] font-black transition-all text-slate-400">ID</button>
@@ -37,6 +40,7 @@
         </div>
     </nav>
 
+    <!-- HERO SECTION -->
     <section id="hero" class="sticky top-0 h-screen w-full flex items-center justify-center bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white z-0 overflow-hidden">
         <div class="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-40"></div>
         
@@ -57,8 +61,10 @@
         </div>
     </section>
 
+    <!-- CONTENT WRAPPER -->
     <div class="relative z-10 bg-slate-50 shadow-[0_-20px_50px_rgba(0,0,0,0.3)] rounded-t-[2rem] md:rounded-t-[3rem]">
 
+        <!-- ABOUT SECTION -->
         <section id="about" class="py-20 md:py-28 max-w-6xl mx-auto px-6 bg-white rounded-t-[2rem] md:rounded-t-[3rem]">
             <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 items-start">
                 <div class="space-y-6 max-w-xs mx-auto md:max-w-none w-full">
@@ -70,7 +76,7 @@
                     <div class="bg-slate-900 text-white p-5 rounded-xl border border-slate-800 shadow-md">
                         <h4 class="text-[10px] font-bold text-cyan-400 uppercase tracking-widest mb-1.5" data-id="PENDIDIKAN" data-en="Education">Education</h4>
                         <p class="text-sm font-extrabold text-white" data-id="Sarjana Teknik Perkapalan" data-en="Bachelor of Naval Architecture">Bachelor of Naval Architecture</p>
-                        <p class="text-xs text-slate-400 mt-0.5">Diponegoro University</p>
+                        <p class="text-xs text-slate-400 mt-0.5" data-id="Universitas Diponegoro" data-en="Diponegoro University">Universitas Diponegoro</p>
                         <div class="inline-block bg-cyan-500/10 text-cyan-400 text-[11px] font-mono font-bold px-2 py-0.5 rounded mt-2 border border-cyan-500/20">IPK / GPA: 3.60 / 4.00</div>
                     </div>
                 </div>
@@ -93,9 +99,10 @@
             </div>
         </section>
 
+        <!-- PROFESSIONAL EXPERIENCE -->
         <section id="experience" class="py-20 md:py-28 bg-slate-100/70 border-t border-b border-slate-200">
             <div class="max-w-4xl mx-auto px-6">
-                <h2 class="text-3xl font-black text-center text-slate-900 mb-2 tracking-tight" data-id="Pengalaman Kerja Profesional" data-en="Professional Work Experience">Professional Work Experience</h2>
+                <h2 class="text-3xl font-black text-center text-slate-900 mb-2 tracking-tight" data-id="Pengalaman Kerja Profesional" data-en="Professional Work Experience">Pengalaman Kerja Profesional</h2>
                 <p class="text-center text-slate-400 text-xs md:text-sm mb-16 max-w-xs sm:max-w-md mx-auto" data-id="Klik pada blok lini masa untuk melihat rincian log teknis BUMN maritim." data-en="Tap on any timeline block to expand technical logs from maritime industry authorities.">Tap on any timeline block to expand technical logs from maritime industry authorities.</p>
                 
                 <div class="space-y-6 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-slate-300">
@@ -103,47 +110,48 @@
                         <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-white border-4 border-slate-900 transform -translate-x-1/2 z-10 group-hover:scale-125 transition shadow-sm"></div>
                         <div class="w-full md:w-[45%] pl-9 md:pl-0 md:text-right">
                             <span class="text-xs font-mono text-slate-900 font-bold bg-slate-200 px-2 py-0.5 rounded md:bg-transparent">Feb 2025 - Mar 2025</span>
-                            <h3 class="text-base md:text-lg font-bold text-slate-900 mt-1 group-hover:text-cyan-600 transition" data-id="Magang Asisten Surveyor" data-en="Surveyor Intern">Surveyor Intern</h3>
-                            <p class="text-xs md:text-sm font-semibold text-slate-500">Biro Klasifikasi Indonesia (BKI) Cilegon</p>
+                            <h3 class="text-base md:text-lg font-bold text-slate-900 mt-1 group-hover:text-cyan-600 transition" data-id="Magang Asisten Surveyor" data-en="Surveyor Intern">Magang Asisten Surveyor</h3>
+                            <p class="text-xs md:text-sm font-semibold text-slate-500" data-id="Biro Klasifikasi Indonesia (BKI) Cilegon" data-en="Biro Klasifikasi Indonesia (BKI) Cilegon">Biro Klasifikasi Indonesia (BKI) Cilegon</p>
                         </div>
                         <div class="w-full md:w-[45%] pl-9 md:pl-0 mt-2 md:mt-0 bg-white p-5 rounded-xl border border-slate-200 group-hover:border-cyan-400 group-hover:shadow-md transition-all duration-200 text-xs md:text-sm text-slate-600 shadow-sm">
                             <span data-id="Pelaksanaan survei lambung dan permesinan sesuai regulasi klasifikasi nasional." data-en="Assisted class surveyors in executing structural hull and machinery survey benchmarks.">Pelaksanaan survei lambung dan permesinan sesuai regulasi klasifikasi nasional.</span>
-                            <span class="text-cyan-600 block text-[10px] mt-2 font-mono font-bold" data-id="Klik untuk detail tugas →" data-en="Click to view duty log →">Click to view duty log →</span>
+                            <span class="text-cyan-600 block text-[10px] mt-2 font-mono font-bold" data-id="Klik untuk detail tugas →" data-en="Click to view duty log →">Klik untuk detail tugas →</span>
                         </div>
                     </div>
 
                     <div onclick="openModal('modal-asdos')" class="relative flex flex-col md:flex-row items-start md:justify-between group cursor-pointer">
                         <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-white border-4 border-slate-900 transform -translate-x-1/2 z-10 group-hover:scale-125 transition shadow-sm"></div>
-                        <div class="w-full md:w-[45%] pl-9 md:pl-0 mt-2 md:mt-0 bg-white p-5 rounded-xl border border-slate-200 group-hover:border-cyan-400 group-hover:shadow-md transition-all duration-200 text-xs md:text-sm text-slate-600 shadow-sm">
+                        <div class="w-full md:w-[45%] pl-9 md:pl-0 mt-2 md:mt-0 bg-white p-5 rounded-xl border border-slate-200 group-hover:border-cyan-400 group-hover:shadow-md transition-all duration-200 text-xs md:text-sm text-slate-600 shadow-sm md:text-right">
                             <span data-id="Membimbing 27 mahasiswa dalam pengerjaan Tugas Rencana Garis & Pemodelan 3D." data-en="Supervised undergraduate ship design projects including lines layout and hydrostatics.">Membimbing 27 mahasiswa dalam pengerjaan Tugas Rencana Garis & Pemodelan 3D.</span>
-                            <span class="text-cyan-600 block text-[10px] mt-2 font-mono font-bold md:text-left" data-id="Klik untuk detail tugas →" data-en="Click to view duty log →">Click to view duty log →</span>
+                            <span class="text-cyan-600 block text-[10px] mt-2 font-mono font-bold md:text-right" data-id="Klik untuk detail tugas →" data-en="Click to view duty log →">Klik untuk detail tugas →</span>
                         </div>
-                        <div class="w-full md:w-[45%] pl-9 md:pl-0 md:order-2">
+                        <div class="w-full md:w-[45%] pl-9 md:pl-0 md:order-2 md:text-left">
                             <span class="text-xs font-mono text-slate-600 font-bold bg-slate-200 px-2 py-0.5 rounded md:bg-transparent">Aug 2024 - Nov 2024</span>
-                            <h3 class="text-base md:text-lg font-bold text-slate-900 mt-1 group-hover:text-cyan-600 transition" data-id="Asisten Dosen" data-en="Assistant Lecturer">Assistant Lecturer</h3>
-                            <p class="text-xs md:text-sm font-semibold text-slate-500">Teknik Perkapalan UNDIP</p>
+                            <h3 class="text-base md:text-lg font-bold text-slate-900 mt-1 group-hover:text-cyan-600 transition" data-id="Asisten Dosen" data-en="Assistant Lecturer">Asisten Dosen</h3>
+                            <p class="text-xs md:text-sm font-semibold text-slate-500" data-id="Teknik Perkapalan UNDIP" data-en="Naval Architecture UNDIP">Teknik Perkapalan UNDIP</p>
                         </div>
                     </div>
 
                     <div onclick="openModal('modal-dkb')" class="relative flex flex-col md:flex-row items-start md:justify-between group cursor-pointer">
                         <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-white border-4 border-cyan-500 transform -translate-x-1/2 z-10 group-hover:scale-125 transition shadow-sm"></div>
-                        <div class="w-full md:w-[45%] pl-9 md:pl-0 mt-2 md:mt-0 bg-white p-5 rounded-xl border border-slate-200 group-hover:border-cyan-400 group-hover:shadow-md transition-all duration-200 text-xs md:text-sm text-slate-600 shadow-sm">
-                            <span data-id="Penyusunan repair list replasi plat lambung, docking plan, dan overhaul CPP." data-en="Executed steel replacement audits, floating dock setup metrics, and mechanical CPP overhauls.">Penyusunan repair list replasi plat lambung, docking plan, dan overhaul CPP.</span>
-                            <span class="text-cyan-600 block text-[10px] mt-2 font-mono font-bold" data-id="Klik untuk detail tugas →" data-en="Click to view duty log →">Click to view duty log →</span>
-                        </div>
                         <div class="w-full md:w-[45%] pl-9 md:pl-0 md:text-right">
                             <span class="text-xs font-mono text-cyan-600 font-bold bg-blue-50 px-2 py-0.5 rounded md:bg-transparent">Jul 2024 - Aug 2024</span>
-                            <h3 class="text-base md:text-lg font-bold text-slate-900 mt-1 group-hover:text-cyan-600 transition" data-id="Magang Engineer" data-en="Engineer Intern">Engineer Intern</h3>
+                            <h3 class="text-base md:text-lg font-bold text-slate-900 mt-1 group-hover:text-cyan-600 transition" data-id="Magang Engineer" data-en="Engineer Intern">Magang Engineer</h3>
                             <p class="text-xs md:text-sm font-semibold text-slate-500">PT Dok & Perkapalan Kodja Bahari (Jakarta II)</p>
+                        </div>
+                        <div class="w-full md:w-[45%] pl-9 md:pl-0 mt-2 md:mt-0 bg-white p-5 rounded-xl border border-slate-200 group-hover:border-cyan-400 group-hover:shadow-md transition-all duration-200 text-xs md:text-sm text-slate-600 shadow-sm">
+                            <span data-id="Penyusunan repair list replasi plat lambung, docking plan, dan overhaul CPP." data-en="Executed steel replacement audits, floating dock setup metrics, and mechanical CPP overhauls.">Penyusunan repair list replasi plat lambung, docking plan, dan overhaul CPP.</span>
+                            <span class="text-cyan-600 block text-[10px] mt-2 font-mono font-bold" data-id="Klik untuk detail tugas →" data-en="Click to view duty log →">Klik untuk detail tugas →</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ORGANIZATIONAL EXPERIENCE -->
         <section id="organization" class="py-20 md:py-28 bg-white border-b border-slate-200">
             <div class="max-w-4xl mx-auto px-6">
-                <h2 class="text-3xl font-black text-center text-slate-900 mb-2 tracking-tight" data-id="Pengalaman Organisasi & Kepemimpinan" data-en="Organizational Leadership Experience">Organizational Leadership Experience</h2>
+                <h2 class="text-3xl font-black text-center text-slate-900 mb-2 tracking-tight" data-id="Pengalaman Organisasi & Kepemimpinan" data-en="Organizational Leadership Experience">Pengalaman Organisasi & Kepemimpinan</h2>
                 <p class="text-center text-slate-400 text-xs md:text-sm mb-16 max-w-xs sm:max-w-md mx-auto" data-id="Klik blok untuk melihat rekam jejak kepemimpinan riset dan tim robotika otonom maritim." data-en="Tap to view managerial logs from autonomous research and student committees.">Tap to view managerial logs from autonomous research and student committees.</p>
                 
                 <div class="space-y-6 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-slate-300">
@@ -152,24 +160,24 @@
                         <div class="w-full md:w-[45%] pl-9 md:pl-0 md:text-right">
                             <span class="text-xs font-mono text-slate-900 font-bold bg-slate-200 px-2 py-0.5 rounded md:bg-transparent">Nov 2024 - Dec 2025</span>
                             <h3 class="text-base md:text-lg font-bold text-slate-900 mt-1 group-hover:text-cyan-600 transition">General Manager</h3>
-                            <p class="text-xs md:text-sm font-semibold text-slate-500">Aterkia Diponegoro Robotics Team</p>
+                            <p class="text-xs md:text-sm font-semibold text-slate-500" data-id="Aterkia Diponegoro Robotics Team" data-en="Aterkia Diponegoro Robotics Team">Aterkia Diponegoro Robotics Team</p>
                         </div>
                         <div class="w-full md:w-[45%] pl-9 md:pl-0 mt-2 md:mt-0 bg-slate-50 p-5 rounded-xl border border-slate-200 group-hover:border-cyan-400 group-hover:shadow-md transition-all duration-200 text-xs md:text-sm text-slate-600 shadow-sm">
                             <span data-id="Memimpin koordinasi strategis 35 staf teknis dalam perancangan wahana otonom ASV/AUV." data-en="Led 35 student engineering cell directing strategies for autonomous marine vehicles.">Memimpin koordinasi strategis 35 staf teknis dalam perancangan wahana otonom ASV/AUV.</span>
-                            <span class="text-cyan-600 block text-[10px] mt-2 font-mono font-bold" data-id="Klik untuk melihat log kepemimpinan →" data-en="Click to view leadership log →">Click to view leadership log →</span>
+                            <span class="text-cyan-600 block text-[10px] mt-2 font-mono font-bold" data-id="Klik untuk melihat log kepemimpinan →" data-en="Click to view leadership log →">Klik untuk melihat log kepemimpinan →</span>
                         </div>
                     </div>
 
                     <div onclick="openModal('modal-himpunan')" class="relative flex flex-col md:flex-row items-start md:justify-between group cursor-pointer">
                         <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-white border-4 border-slate-900 transform -translate-x-1/2 z-10 group-hover:scale-125 transition shadow-sm"></div>
-                        <div class="w-full md:w-[45%] pl-9 md:pl-0 mt-2 md:mt-0 bg-slate-50 p-5 rounded-xl border border-slate-200 group-hover:border-cyan-400 group-hover:shadow-md transition-all duration-200 text-xs md:text-sm text-slate-600 shadow-sm">
+                        <div class="w-full md:w-[45%] pl-9 md:pl-0 mt-2 md:mt-0 bg-slate-50 p-5 rounded-xl border border-slate-200 group-hover:border-cyan-400 group-hover:shadow-md transition-all duration-200 text-xs md:text-sm text-slate-600 shadow-sm md:text-right">
                             <span data-id="Mengoordinasi program ilmiah departemen dan peningkatan kemampuan mahasiswa." data-en="Managed student tech seminars and accelerated mathematical/scientific writing workflows.">Mengoordinasi program ilmiah departemen dan peningkatan kemampuan mahasiswa.</span>
-                            <span class="text-cyan-600 block text-[10px] mt-2 font-mono font-bold md:text-left" data-id="Klik untuk melihat log divisi →" data-en="Click to view division log →">Click to view division log →</span>
+                            <span class="text-cyan-600 block text-[10px] mt-2 font-mono font-bold md:text-right" data-id="Klik untuk melihat log divisi →" data-en="Click to view division log →">Klik untuk melihat log divisi →</span>
                         </div>
-                        <div class="w-full md:w-[45%] pl-9 md:pl-0 md:order-2">
+                        <div class="w-full md:w-[45%] pl-9 md:pl-0 md:order-2 md:text-left">
                             <span class="text-xs font-mono text-slate-600 font-bold bg-slate-200 px-2 py-0.5 rounded md:bg-transparent">Apr 2025 - Jan 2026</span>
-                            <h3 class="text-base md:text-lg font-bold text-slate-900 mt-1 group-hover:text-cyan-600 transition" data-id="Kepala Divisi Riset & Pengembangan" data-en="Head Division of R&D">Head Division of R&D</h3>
-                            <p class="text-xs md:text-sm font-semibold text-slate-500">Himpunan Mahasiswa Teknik Perkapalan UNDIP</p>
+                            <h3 class="text-base md:text-lg font-bold text-slate-900 mt-1 group-hover:text-cyan-600 transition" data-id="Kepala Divisi Riset & Pengembangan" data-en="Head Division of R&D">Kepala Divisi Riset & Pengembangan</h3>
+                            <p class="text-xs md:text-sm font-semibold text-slate-500" data-id="Himpunan Mahasiswa Teknik Perkapalan UNDIP" data-en="Student Executive Board of Naval Architecture UNDIP">Himpunan Mahasiswa Teknik Perkapalan UNDIP</p>
                         </div>
                     </div>
 
@@ -178,10 +186,10 @@
                         <div class="w-full md:w-[45%] pl-9 md:pl-0 md:text-right">
                             <span class="text-xs font-mono text-cyan-600 font-bold bg-blue-50 px-2 py-0.5 rounded md:bg-transparent">Nov 2022 - Nov 2024</span>
                             <h3 class="text-base md:text-lg font-bold text-slate-900 mt-1 group-hover:text-cyan-600 transition" data-id="Staf Mekanik" data-en="Mechanical Staff">Staf Mekanik</h3>
-                            <p class="text-xs md:text-sm font-semibold text-slate-500">Aterkia Diponegoro Robotics Team</p>
+                            <p class="text-xs md:text-sm font-semibold text-slate-500" data-id="Aterkia Diponegoro Robotics Team" data-en="Aterkia Diponegoro Robotics Team">Aterkia Diponegoro Robotics Team</p>
                         </div>
                         <div class="w-full md:w-[45%] pl-9 md:pl-0 mt-2 md:mt-0 bg-slate-50 p-5 rounded-xl border border-slate-200 group-hover:border-cyan-400 group-hover:shadow-md transition-all duration-200 text-xs md:text-sm text-slate-600 shadow-sm">
-                            <span data-id="Integrasi mekanis lambung katamaran, konstruksi internal, dan sistem propulsi azimuth thruster." data-en="Modeled 3D catamaran geometries and calibrated azimuth propulsion mechanics.">Integrasi mekanis lambung katamaran, konstruksi internal, dan sistem propulsi azimuth thruster.</span>
+                            <span data-id="Integrasi mekanis lambung katamaran, konstruksi internal, dan sistem propulsi otonom." data-en="Modeled 3D catamaran geometries and calibrated azimuth propulsion mechanics.">Integrasi mekanis lambung katamaran, konstruksi internal, dan sistem propulsi otonom.</span>
                             <span class="text-cyan-600 block text-[10px] mt-2 font-mono font-bold" data-id="Klik untuk melihat log mekanik →" data-en="Click to view mechanical log →">Click to view mechanical log →</span>
                         </div>
                     </div>
@@ -189,49 +197,55 @@
             </div>
         </section>
 
+        <!-- TECHNICAL PROFICIENCY (FIXED STAR-CCM+ COLOR) -->
         <section id="skills" class="py-20 md:py-28 bg-slate-50">
             <div class="max-w-6xl mx-auto px-6 space-y-16">
                 
+                <!-- SOFTWARE PROFICIENCY -->
                 <div class="space-y-6">
-                    <h2 class="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2"><i class="fa-solid fa-laptop-code text-cyan-500"></i> <span data-id="Keahlian Perangkat Lunak" data-en="Software Proficiency">Software Proficiency</span></h2>
+                    <h2 class="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2"><i class="fa-solid fa-laptop-code text-slate-800"></i> <span data-id="Keahlian Perangkat Lunak" data-en="Software Proficiency">Keahlian Perangkat Lunak</span></h2>
                     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-                        <div class="bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md transition"><i class="fa-solid fa-drafting-compass text-2xl text-slate-700 mb-2"></i><h3 class="text-xs font-bold text-slate-900">AutoCAD</h3><p class="text-[10px] text-slate-400 mt-1">2D Technical Drafting</p></div>
-                        <div class="bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md transition"><i class="fa-solid fa-cube text-2xl text-slate-700 mb-2"></i><h3 class="text-xs font-bold text-slate-900">Rhinoceros</h3><p class="text-[11px] text-slate-500 mt-1">3D Hull Modeling</p></div>
-                        <div class="bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md transition"><i class="fa-solid fa-layer-group text-2xl text-slate-700 mb-2"></i><h3 class="text-xs font-bold text-slate-900">SOLIDWORKS</h3></div>
-                        <div class="bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md transition"><i class="fa-solid fa-ship text-2xl text-slate-700 mb-2"></i><h3 class="text-xs font-bold text-slate-900">Maxsurf</h3></div>
-                        <div class="bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md transition"><i class="fa-solid fa-wind text-2xl text-cyan-500 mb-2 animate-pulse"></i><h3 class="text-xs font-bold text-slate-900">STAR-CCM+</h3><p class="text-[10px] text-cyan-600 font-mono font-bold mt-1">Advanced CFD</p></div>
-                        <div class="bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md transition"><i class="fa-solid fa-clapperboard text-2xl text-slate-700 mb-2"></i><h3 class="text-xs font-bold text-slate-900">Lumion</h3></div>
+                        <div class="bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md transition"><i class="fa-solid fa-drafting-compass text-2xl text-slate-700 mb-2"></i><h3 class="text-xs font-bold text-slate-900">AutoCAD</h3><p class="text-[10px] text-slate-400 mt-1" data-id="Desain 2D" data-en="2D Design">Desain 2D</p></div>
+                        <div class="bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md transition"><i class="fa-solid fa-cube text-2xl text-slate-700 mb-2"></i><h3 class="text-xs font-bold text-slate-900">Rhinoceros</h3><p class="text-[10px] text-slate-400 mt-1" data-id="Desain 3D" data-en="3D Design">Desain 3D</p></div>
+                        <div class="bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md transition"><i class="fa-solid fa-layer-group text-2xl text-slate-700 mb-2"></i><h3 class="text-xs font-bold text-slate-900">SOLIDWORKS</h3><p class="text-[10px] text-slate-400 mt-1" data-id="Desain 3D" data-en="3D Design">Desain 3D</p></div>
+                        <div class="bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md transition"><i class="fa-solid fa-ship text-2xl text-slate-700 mb-2"></i><h3 class="text-xs font-bold text-slate-900">Maxsurf</h3><p class="text-[10px] text-slate-400 mt-1" data-id="Desain 3D" data-en="3D Design">Desain 3D</p></div>
+                        <!-- FIXED COLOR UNIFORMITY FOR STAR-CCM+ -->
+                        <div class="bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md transition"><i class="fa-solid fa-wind text-2xl text-slate-700 mb-2"></i><h3 class="text-xs font-bold text-slate-900">STAR-CCM+</h3><p class="text-[10px] text-slate-400 mt-1" data-id="Analisis Hidrodinamika" data-en="Hydrodynamics Analysis">Analisis Hidrodinamika</p></div>
+                        <div class="bg-white rounded-xl border border-slate-200 p-4 text-center hover:shadow-md transition"><i class="fa-solid fa-clapperboard text-2xl text-slate-700 mb-2"></i><h3 class="text-xs font-bold text-slate-900">Lumion</h3><p class="text-[10px] text-slate-400 mt-1" data-id="Render / 3D Animasi" data-en="Render / 3D Animation">Render / 3D Animasi</p></div>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6 border-t border-slate-200">
+                    <!-- SOFT SKILLS -->
                     <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
-                        <h4 class="text-sm font-extrabold text-slate-900 flex items-center gap-2"><i class="fa-solid fa-gears text-blue-600"></i> <span data-id="Keahlian Interpersonal" data-en="Soft Skills Continuum">Soft Skills Continuum</span></h4>
+                        <h4 class="text-sm font-extrabold text-slate-900 flex items-center gap-2"><i class="fa-solid fa-gears text-slate-800"></i> <span data-id="Kemampuan Interpersonal" data-en="Soft Skills Continuum">Soft Skills Continuum</span></h4>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-slate-50 border border-slate-200 text-slate-700 text-[11px] px-2.5 py-1.5 rounded-lg font-medium shadow-sm">Leadership</span>
-                            <span class="bg-slate-50 border border-slate-200 text-slate-700 text-[11px] px-2.5 py-1.5 rounded-lg font-medium shadow-sm">Team Management</span>
-                            <span class="bg-slate-50 border border-slate-200 text-slate-700 text-[11px] px-2.5 py-1.5 rounded-lg font-medium shadow-sm">Project Management & Planning</span>
-                            <span class="bg-slate-50 border border-slate-200 text-slate-700 text-[11px] px-2.5 py-1.5 rounded-lg font-medium shadow-sm">Problem Solving</span>
                             <span class="bg-slate-50 border border-slate-200 text-slate-700 text-[11px] px-2.5 py-1.5 rounded-lg font-medium shadow-sm">Analytical Thinking</span>
                             <span class="bg-slate-50 border border-slate-200 text-slate-700 text-[11px] px-2.5 py-1.5 rounded-lg font-medium shadow-sm">Teamwork</span>
+                            <span class="bg-slate-50 border border-slate-200 text-slate-700 text-[11px] px-2.5 py-1.5 rounded-lg font-medium shadow-sm">Leadership</span>
+                            <span class="bg-slate-50 border border-slate-200 text-slate-700 text-[11px] px-2.5 py-1.5 rounded-lg font-medium shadow-sm">Team Management</span>
+                            <span class="bg-slate-50 border border-slate-200 text-slate-700 text-[11px] px-2.5 py-1.5 rounded-lg font-medium shadow-sm">Problem Solving</span>
+                            <span class="bg-slate-50 border border-slate-200 text-slate-700 text-[11px] px-2.5 py-1.5 rounded-lg font-medium shadow-sm">Project Management & Planning</span>
                         </div>
                     </div>
 
+                    <!-- FIELDS OF INTEREST -->
                     <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
-                        <h4 class="text-sm font-extrabold text-slate-900 flex items-center gap-2"><i class="fa-solid fa-compass text-amber-600"></i> <span data-id="Bidang Minat & Spesialisasi" data-en="Fields of Interest">Fields of Interest</span></h4>
+                        <h4 class="text-sm font-extrabold text-slate-900 flex items-center gap-2"><i class="fa-solid fa-compass text-slate-800"></i> <span data-id="Bidang yang Diminati" data-en="Fields of Interest">Bidang yang Diminati</span></h4>
                         <div class="flex flex-wrap gap-1.5">
-                            <span class="bg-slate-50 border border-slate-200 text-slate-600 text-[10px] md:text-xs px-2.5 py-1.5 rounded shadow-sm font-semibold hover:border-cyan-400 transition cursor-default">Rancang Bangun & Desain Kapal</span>
-                            <span class="bg-slate-50 border border-slate-200 text-slate-600 text-[10px] md:text-xs px-2.5 py-1.5 rounded shadow-sm font-semibold hover:border-cyan-400 transition cursor-default">Produksi & Operasi Galangan</span>
-                            <span class="bg-slate-50 border border-slate-200 text-slate-600 text-[10px] md:text-xs px-2.5 py-1.5 rounded shadow-sm font-semibold hover:border-cyan-400 transition cursor-default">Manajemen Operasi Pelabuhan & Terminal</span>
-                            <span class="bg-slate-50 border border-slate-200 text-slate-600 text-[10px] md:text-xs px-2.5 py-1.5 rounded shadow-sm font-semibold hover:border-cyan-400 transition cursor-default">Computational Fluid Dynamics</span>
-                            <span class="bg-slate-50 border border-slate-200 text-slate-600 text-[10px] md:text-xs px-2.5 py-1.5 rounded shadow-sm font-semibold hover:border-cyan-400 transition cursor-default">Analisis Hidrodinamika</span>
-                            <span class="bg-slate-50 border border-slate-200 text-slate-600 text-[10px] md:text-xs px-2.5 py-1.5 rounded shadow-sm font-semibold hover:border-cyan-400 transition cursor-default">Robotika Maritim & Sistem Otonom</span>
+                            <span class="bg-slate-50 border border-slate-200 text-slate-600 text-[10px] md:text-xs px-2.5 py-1.5 rounded shadow-sm font-semibold" data-id="Rancang Bangun & Desain Kapal" data-en="Ship Design & Engineering">Rancang Bangun & Desain Kapal</span>
+                            <span class="bg-slate-50 border border-slate-200 text-slate-600 text-[10px] md:text-xs px-2.5 py-1.5 rounded shadow-sm font-semibold">Computational Fluid Dynamics</span>
+                            <span class="bg-slate-50 border border-slate-200 text-slate-600 text-[10px] md:text-xs px-2.5 py-1.5 rounded shadow-sm font-semibold" data-id="Analisis Hidrodinamika" data-en="Hydrodynamic Analysis">Analisis Hidrodinamika</span>
+                            <span class="bg-slate-50 border border-slate-200 text-slate-600 text-[10px] md:text-xs px-2.5 py-1.5 rounded shadow-sm font-semibold" data-id="Produksi & Operasi Galangan" data-en="Shipyard Production & Operations">Produksi & Operasi Galangan</span>
+                            <span class="bg-slate-50 border border-slate-200 text-slate-600 text-[10px] md:text-xs px-2.5 py-1.5 rounded shadow-sm font-semibold" data-id="Manajemen Operasi Pelabuhan & Terminal" data-en="Port & Terminal Operations Management">Manajemen Operasi Pelabuhan & Terminal</span>
+                            <span class="bg-slate-50 border border-slate-200 text-slate-600 text-[10px] md:text-xs px-2.5 py-1.5 rounded shadow-sm font-semibold" data-id="Robotika Maritim & Sistem Otonom" data-en="Maritime Robotics & Autonomous Systems">Robotika Maritim & Sistem Otonom</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- VISUAL GALLERY CASE STUDIES & PROJECTS -->
         <section id="projects" class="py-20 md:py-28 bg-white border-t border-b border-slate-200">
             <div class="max-w-6xl mx-auto px-6">
                 <h2 class="text-3xl font-black text-center text-slate-900 mb-2 tracking-tight" data-id="Galeri Studi Kasus & Proyek Teknik" data-en="Case Studies & Visual Engineering Gallery">Galeri Studi Kasus & Proyek Teknik</h2>
@@ -299,6 +313,7 @@
             </div>
         </section>
 
+        <!-- ACHIEVEMENTS & AWARDS -->
         <section id="achievements" class="py-20 md:py-28 bg-slate-100/70 border-b border-slate-200">
             <div class="max-w-6xl mx-auto px-6">
                 <div class="text-center mb-16">
@@ -334,6 +349,7 @@
             </div>
         </section>
 
+        <!-- CONTACT SECTION -->
         <section id="contact" class="py-20 md:py-24 max-w-6xl mx-auto px-6 text-center border border-slate-850 bg-slate-950 text-white md:rounded-3xl md:my-8 shadow-2xl">
             <div class="max-w-xl mx-auto space-y-6">
                 <h2 class="text-3xl font-black tracking-tight text-white" data-id="Mari Ciptakan Sesuatu yang Luar Biasa" data-en="Let's Build Something Exceptional">Let's Build Something Exceptional</h2>
@@ -345,12 +361,14 @@
             </div>
         </section>
 
+        <!-- FOOTER -->
         <footer class="py-8 text-center text-xs text-slate-500 bg-slate-50 border-t border-slate-200">
             <p>&copy; 2026 Zidan Alriski Putra H. All Rights Reserved. Tracked via Vercel Edge Server Nodes.</p>
         </footer>
 
     </div>
 
+    <!-- CERTIFICATE MODAL -->
     <div id="cert-popup-modal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 flex items-center justify-center p-3 hidden opacity-0 transition-all duration-300">
         <div class="bg-slate-900 border border-slate-800 max-w-4xl w-full rounded-2xl p-1.5 shadow-2xl relative transform scale-95 opacity-0 transition-all duration-300">
             <div class="bg-slate-800 px-4 py-2.5 rounded-t-xl flex justify-between items-center border-b border-slate-700">
@@ -361,6 +379,7 @@
         </div>
     </div>
 
+    <!-- DEDICATED PROYEK INTERACTIVE DETAIL MODAL WITH 3-IMAGE ROW -->
     <div id="project-detail-modal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden opacity-0 transition-all duration-300">
         <div class="bg-white border border-slate-200 max-w-3xl w-full rounded-2xl p-6 relative shadow-2xl max-h-[90vh] overflow-y-auto transform scale-95 opacity-0 transition-all duration-300 space-y-5">
             <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 text-lg p-1 cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
@@ -377,6 +396,7 @@
         </div>
     </div>
 
+    <!-- EXPERIENCE MODALS -->
     <div id="modal-bki" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden opacity-0 transition-all duration-300">
         <div class="bg-white border border-slate-200 max-w-lg w-full rounded-2xl p-5 md:p-6 relative shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto transform scale-95 opacity-0 transition-all duration-300">
             <button onclick="closeModal('modal-bki')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 text-lg p-1 cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
@@ -416,6 +436,7 @@
         </div>
     </div>
 
+    <!-- ORGANIZATIONAL EXP MODALS -->
     <div id="modal-himpunan" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden opacity-0 transition-all duration-300">
         <div class="bg-white border border-slate-200 max-w-lg w-full rounded-2xl p-5 md:p-6 relative shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto transform scale-95 opacity-0 transition-all duration-300">
             <button onclick="closeModal('modal-himpunan')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 text-lg p-1 cursor-pointer"><i class="fa-solid fa-xmark"></i></button>
@@ -435,7 +456,7 @@
             <h3 class="text-lg md:text-xl font-bold text-slate-900 pr-6">General Manager — Aterkia Diponegoro</h3>
             <ul class="text-xs md:text-sm text-slate-600 space-y-2.5 list-disc list-inside border-t border-slate-100 pt-3">
                 <li>Memimpin tim robotika maritim beranggotakan 35 mahasiswa, serta mengarahkan strategi teknis dan alur kerja rekayasa untuk kendaraan maritim otonom (AMV).</li>
-                <li>Meraih Juara 1 (Kategori Funrace ASV) Disertai Juara Harapan 2 (Kategori Utama ASV) pada Kontes Kapal Indonesia (KKI) 2025 melalui manajemen penugasan dan operasional kapal "ATEROLAS".</li>
+                <li>Meraih Juara 1 (Kategori Funrace ASV) dan Juara Harapan 2 (Kategori Utama ASV) pada Kontes Kapal Indonesia (KKI) 2025 melalui manajemen penugasan dan operasional kapal "ATEROLAS".</li>
             </ul>
         </div>
     </div>
@@ -452,52 +473,61 @@
         </div>
     </div>
 
+    <!-- FIXED JAVASCRIPT ENGINE -->
     <script>
         const projectData = {
             id: {
                 p1_title: "Inisiasi Perubahan Metode Tugas Desain",
-                p1_desc: "Pengerjaan tugas desain kapal secara konvensional masih bergantung pada perhitungan manual 2D. Proyek ini bertujuan mengintegrasikan Maxsurf sebagai metode pembanding dan validasi dengan mentransformasikan data 2D menjadi model 3D surface untuk memprediksi kurva stabilitas, mengestimasi hambatan lambung, serta menentukan spesifikasi daya mesin secara lebih akurat.",
+                p1_desc: "Pengerjaan tugas desain kapal secara konvensional masih bergantung pada perhitungan manual 2D. Proyek ini bertujuan mengintegrasikan Maxsurf sebagai metode pembanding dan validasi dengan mentransformasikan data 2D menjadi model 3D surface di Maxsurf, simulasi numerik dapat dilakukan untuk memprediksi kurva stabilitas, mengestimasi hambatan lambung, serta menentukan spesifikasi daya mesin secara lebih akurat, cepat, dan modern.",
                 p2_title: "Perancangan Prototipe Autonomous Offshore Supply Vessel",
-                p2_desc: "Perancangan wahana otonom Autonomous Surface Vessel (ASV) berkonsep Offshore Supply Vessel (OSV) untuk berlaga di ajang Kontes Kapal Indonesia (KKI) 2024. Fokus utama proyek ini adalah mengintegrasikan prinsip hidrodinamika kapal ke dalam sistem robotika otonom berskala kecil.",
+                p2_desc: "Proyek ini merupakan perancangan wahana otonom Autonomous Surface Vessel (ASV) berkonsep Offshore Supply Vessel (OSV) untuk berlaga di ajang Kontes Kapal Indonesia (KKI) 2024. Fokus utama proyek ini adalah mengintegrasikan prinsip hidrodinamika kapal ke dalam sistem robotika otonom berskala kecil. Kontribusi penuh saya dalam proyek ini mencakup seluruh siklus perancangan teknis wahana, mulai dari pembuatan desain lambung (hull form design), penyusunan rencana garis (lines plan), hingga pembuatan rencana umum (general arrangement) untuk penataan komponen internal. Selain itu, saya bertanggung jawab melakukan analisis hambatan lambung (resistance analysis) untuk optimasi efisiensi daya serta analisis stabilitas (stability analysis) guna memastikan keamanan olah gerak robot saat bermanuver secara otonom di lapangan. Proyek ini sukses mengantarkan tim menjadi Finalis Nasional di ajang tersebut.",
                 p3_title: "Perancangan Kapal Ro-Pax Green Energy",
-                p3_desc: "Perancangan konsep kapal Ro-Pax berbasis teknologi ramah lingkungan yang dikembangkan untuk ajang kompetisi internasional WINTEX 2024. Kontribusi meliputi perancangan lambung kapal menggunakan perangkat lunak CAD serta pelaksanaan analisis hambatan kapal.",
+                p3_desc: "Proyek ini merupakan perancangan konsep kapal Ro-Pax (Roll-on/Roll-off Passenger) berbasis teknologi ramah lingkungan yang dikembangkan untuk ajang kompetisi internasional WINTEX 2024. Fokus utama riset ini adalah menghadirkan solusi transportasi laut masa depan yang mampu menekan emisi karbon secara signifikan. Kontribusi penuh saya dalam tim meliputi penyusunan ide inovasi sistem kapal, perancangan lambung kapal (hull form design) menggunakan perangkat lunak CAD, serta pelaksanaan analisis hambatan kapal (resistance analysis) untuk memastikan efisiensi konsumsi energi yang optimal. Pendekatan desain yang holistik dan berorientasi pada keberlanjutan lingkungan ini sukses mengantarkan tim meraih penghargaan Silver Medal di ajang internasional tersebut.",
                 p4_title: "Perancangan Kolam Ikan Lele di Desa Geneng, Kab. Demak",
-                p4_desc: "Proyek bagian dari program pengabdian masyarakat (KKN) di Desa Geneng, Kabupaten Demak. Kontribusi meliputi perancangan teknis serta pembuatan desain 2D and 3D kolam ikan menggunakan perangkat lunak CAD untuk memastikan akurasi struktur dan tata letak operasional yang optimal.",
+                p4_desc: "Proyek ini merupakan bagian dari program pengabdian masyarakat (KKN) di Desa Geneng, Kabupaten Demak, yang bertujuan untuk mengoptimalkan potensi ekonomi lokal melalui sektor perikanan. Fokus utama proyek ini adalah merancang sistem kolam budidaya ikan lele yang efisien, higienis, dan sesuai dengan kondisi lahan desa. Kontribusi penuh saya dalam program ini meliputi perancangan teknis serta pembuatan desain 2D dan 3D kolam ikan menggunakan perangkat lunak CAD untuk memastikan akurasi struktur dan tata letak operasional yang optimal. Selain itu, saya bertanggung jawab dalam penyusunan dan penulisan jurnal ilmiah sebagai output luaran resmi dari program kerja, guna mendokumentasikan metodologi rekayasa kolam dan memberikan panduan berkelanjutan bagi masyarakat setempat.",
                 p5_title: "Perancangan Prototipe Autonomous Ro-Ro Vessel",
-                p5_desc: "Pengembangan wahana otonom Autonomous Ro-Ro Vessel bernama 'ATEROLAS' yang berhasil meraih penghargaan Juara 1 (Funrace ASV) dan Juara Harapan 2 (Main ASV) pada KKI 2025. Desain lambung menggunakan konsep catamaran untuk stabilitas maksimum.",
+                p5_desc: "Proyek ini merupakan perancangan dan pengembangan wahana otonom Autonomous Ro-Ro Vessel bernama 'ATEROLAS' yang berhasil meraih penghargaan Juara 1 (Funrace ASV) dan Juara Harapan 2 (Main ASV) pada Kontes Kapal Indonesia (KKI) 2025. Sebagai General Manager tim robotika Aterkia, saya memimpin total 35 staff lintas disiplin (Mekanik, Elektrikal, dan Pemrograman) untuk mengeksekusi proyek ini secara end-to-end. Kontribusi teknis saya berfokus pada perancangan desain lambung kapal (hull form) berkonsep catamaran untuk stabilitas maksimum, pembuatan rencana garis (lines plan), tata susunan umum (general arrangement) komponen internal, serta analisis hambatan lambung (resistance) dan stabilitas dinamis. Proyek ini sukses mentransformasikan riset teoretis menjadi wahana otonom berperforma tinggi yang teruji unggul di tingkat nasional.",
                 p6_title: "Analisis Desain Pelindung Propeller Kaplan Ka4-70 menggunakan metode CFD",
-                p6_desc: "Penelitian Tugas Akhir yang berfokus pada analisis dan optimasi performa Kaplan Ka4-70 Propeller Guard menggunakan metode Computational Fluid Dynamics (CFD) untuk mengevaluasi pengaruh pelindung terhadap koefisien gaya dorong (KT), torsi (KQ), dan efisiensi.",
-                p7_title: "CFD Analyst Proyek Kolaborasi Riset Dosen",
-                p7_desc: "Peran sebagai CFD Analyst dalam proyek riset kolaboratif fakultas. Bertanggung jawab memvalidasi performa baling-baling B-series melalui simulasi CFD, serta mengoptimalkan konfigurasi kisar (pitch) pada propeler Kaplan Ka4-70 guna memaksimalkan efisiensi hidrodinamika."
+                p6_desc: "Proyek ini merupakan penelitian Tugas Akhir saya yang berfokus pada analisis dan optimasi performa Kaplan Ka4-70 Propeller Guard menggunakan metode Computational Fluid Dynamics (CFD). Riset ini diinisiasi untuk mengevaluasi pengaruh penambahan komponen keselamatan (propeller guard) terhadap karakteristik hidrodinamika dan efisiensi sistem penggerak kapal. Kontribusi mandiri saya dalam proyek ini meliputi pemodelan geometri propeler dan guard secara presisi, pengaturan simulasi numerik aliran fluida tingkat lanjut, serta validasi performa melalui kurva koefisien gaya dorong (KT), torsi (KQ), dan efisiensi. Hasil penelitian ini memberikan kontribusi ilmiah yang signifikan dalam pengembangan sistem propulsi laut yang aman tanpa mengorbankan efisiensi hidrodinamika kapal.",
+                p7_title: "CFD Analyst Kolaborasi Riset Dosen",
+                p7_desc: "Bagian ini merangkum peran saya sebagai CFD Analyst dalam dua proyek riset terpisah yang berkolaborasi dengan dosen Teknik Perkapalan. Proyek pertama berfokus pada ranah akademik-metodologis, yaitu melakukan validasi numerik karakteristik hidrodinamika B-series propeller dengan membandingkan hasil simulasi CFD langsung terhadap data eksperimen terbuka (Open Water Test). Sementara itu, proyek kedua bersifat aplikatif-industri yang bertujuan untuk melakukan optimasi konfigurasi pitch pada Kaplan Ka4-70 propeller guna meningkatkan efisiensi sistem propulsi pada kapal Self-Propelled Oil Barge (SPOB). Melalui kedua proyek independen ini, saya bertanggung jawab penuh dalam pemodelan geometri, pengaturan simulasi fluida, serta analisis data numerik untuk menghasilkan solusi rekayasa yang valid dan presisi."
             },
             en: {
                 p1_title: "Design Task Method Transformation",
-                p1_desc: "Transformed conventional 2D manual calculations into Maxsurf 3D surface modeling to automate stability curve analysis, hull resistance predictions, and engine power matching accurately and digitally.",
-                p2_title: "Autonomous Offshore Supply Vessel Prototype",
-                p2_desc: "Engineering design of an Autonomous Surface Vessel (ASV) utilizing an Offshore Supply Vessel (OSV) concept for KKI 2024. Scope covered complete hull form generation, lines plan drawing, GA layouts, and maneuver stability analytics.",
-                p3_title: "Green Energy Ro-Pax Vessel Design",
-                p3_desc: "Conceptualized the 'DIPANEGARA' eco-friendly Roll-on/Roll-off passenger vessel for WINTEX 2024. New zero-emission innovations backed up by advanced hull resistance evaluations.",
-                p4_title: "Water-Efficient Catfish Pond Design (KKN Demak)",
-                p4_desc: "Technical planning and 2D/3D CAD modeling of a sustainable canvas catfish pond structure in Demak. Project output successfully published in national peer-reviewed journals.",
-                p5_title: "Autonomous Ro-Ro Catamaran Vessel 'ATEROLAS'",
-                p5_desc: "Led the end-to-end engineering of the award-winning catamaran autonomous vessel for KKI 2025. Executed high-stability hull design layouts, numerical resistance analytics, and cross-divisional system deployment stacks.",
-                p6_title: "Kaplan Ka4-70 Propeller Guard Analysis via CFD",
-                p6_desc: "Comprehensive undergraduate thesis evaluation using CFD modeling to isolate open water thrust (KT), torque (KQ), and hydrodynamic efficiency margins affected by mechanical propeller guard additions.",
-                p7_title: "Faculty Research Collaborative CFD Analyst Portfolio",
-                p7_desc: "Conducted numerical hydrodynamic validation of B-Series propellers against Open Water Test experimental criteria, alongside optimizing pitch setups for Kaplan Ka4-70 propellers deployed on Self-Propelled Oil Barges (SPOB)."
+                p1_desc: "Conventional ship design tasks traditionally rely heavily on manual 2D calculations. This project integrates Maxsurf as a validation methodology by transforming 2D lines assets into 3D surface representations. This allows numerical simulation tools to plot stability curves, predict structural hull resistance values, and match power requirements accurately and digitally.",
+                p2_title: "Autonomous Offshore Supply Vessel Prototype Design",
+                p2_desc: "This initiative engineering handles an Autonomous Surface Vessel (ASV) utilizing an Offshore Supply Vessel (OSV) conceptual architectural footprint for KKI 2024. Complete scope deliverables contained hull form generation, lines drafting, general arrangement Pen penning, resistance evaluation loops, and robotic maneuvering dynamic stability validations.",
+                p3_title: "Green Energy Ro-Pax Vessel Infrastructure Perancangan",
+                p3_desc: "Developed a next-generation eco-friendly Roll-on/Roll-off passenger (Ro-Pax) vessel layout for the international WINTEX 2024 competition grid. Handled system innovation layouts, CAD hull model assembly, and hydrodynamics flow tracking parameters to maximize energy saving thresholds, securing a Silver Medal outcome.",
+                p4_title: "Water-Efficient Aquaculture Structural Project (KKN Demak)",
+                p4_desc: "An engineering-driven social responsibility project focused on building water-efficient catfish canvas aquaculture pods in Geneng, Demak. Duties mapped 2D/3D CAD layout architecture for optimal operations, paired with authoring a technical paper published in the West Science national journal grid.",
+                p5_title: "Autonomous Ro-Ro Catamaran Carrier 'ATEROLAS'",
+                p5_desc: "Managed end-to-end multi-disciplinary development for the advanced 'ATEROLAS' autonomous vessel cell, sweeping 1st Place (Funrace ASV) and Harapan 2 positions at KKI 2025. Technical ownership isolated high-stability catamaran geometric styling, towing resistance arrays, and dynamic balance configurations.",
+                p6_title: "CFD Performance Assessment of Kaplan Ka4-70 Propeller Guard Designs",
+                p6_desc: "Undergraduate thesis separating thrust (KT), torque (KQ), and open water efficiency variables impacted by adding safety propeller guard structures. Modeled exact geometries and set advanced mesh boundary fluid flow conditions inside high-fidelity software solvers.",
+                p7_title: "Faculty Collaborative Fluid Analytics Pipeline (CFD Analyst)",
+                p7_desc: "Served as a CFD Analyst in twin collaborative research paths alongside department faculty. Path one resolved verification loops for B-Series propeller open water dynamics against experimental tests. Path two resolved industrial pitch pitch alterations on Kaplan Ka4-70 configurations to maximize propulsion delivery benchmarks on Self-Propelled Oil Barges (SPOB)."
             }
         };
 
         function toggleLanguage(lang) {
             const idBtn = document.getElementById('btn-lang-id');
             const enBtn = document.getElementById('btn-lang-en');
+            const idBtnMob = document.getElementById('btn-lang-id-mob');
+            const enBtnMob = document.getElementById('btn-lang-en-mob');
+
             if (lang === 'id') {
                 idBtn.className = "px-2 py-0.5 rounded-full text-[10px] font-black bg-cyan-500 text-slate-900 shadow-sm";
                 enBtn.className = "px-2 py-0.5 rounded-full text-[10px] font-black text-slate-400";
+                if(idBtnMob) idBtnMob.className = "px-2 py-0.5 rounded-full text-[9px] font-black bg-cyan-500 text-slate-900 shadow-sm";
+                if(enBtnMob) enBtnMob.className = "px-2 py-0.5 rounded-full text-[9px] font-black text-slate-400";
             } else {
                 enBtn.className = "px-2 py-0.5 rounded-full text-[10px] font-black bg-cyan-500 text-slate-900 shadow-sm";
                 idBtn.className = "px-2 py-0.5 rounded-full text-[10px] font-black text-slate-400";
+                if(enBtnMob) enBtnMob.className = "px-2 py-0.5 rounded-full text-[9px] font-black bg-cyan-500 text-slate-900 shadow-sm";
+                if(idBtnMob) idBtnMob.className = "px-2 py-0.5 rounded-full text-[9px] font-black text-slate-400";
             }
+
             const elements = document.querySelectorAll('[data-id]');
             elements.forEach(el => {
                 if (lang === 'id') el.innerHTML = el.getAttribute('data-id');
@@ -515,7 +545,7 @@
             const img3 = document.getElementById('proj-img-3');
             const interiorCard = modal.querySelector('.transform');
             
-            // FIXED SINKRONISASI EVALUASI NODE BAHASA
+            // FIXED LANG SWITCH SYNC DETECTION ROOT
             const isIndo = document.getElementById('btn-lang-id').classList.contains('bg-cyan-500');
 
             img1.src = projId.toUpperCase() + "_A.png";
@@ -607,13 +637,12 @@
         function closeCertModal() {
             const modal = document.getElementById('cert-popup-modal');
             const interiorCard = modal.querySelector('.transform');
-            const viewer = document.getElementById('popup-pdf-viewer');
             interiorCard.classList.remove('scale-100', 'opacity-100');
             interiorCard.classList.add('scale-95', 'opacity-0');
             modal.classList.add('opacity-0');
             setTimeout(() => {
                 modal.classList.add('hidden');
-                viewer.src = ""; 
+                document.getElementById('popup-pdf-viewer').src = ""; 
                 document.body.style.overflow = 'auto'; 
             }, 250);
         }
